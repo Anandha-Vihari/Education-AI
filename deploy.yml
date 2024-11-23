@@ -1,0 +1,40 @@
+version: "1.0"
+ 
+services:
+  web:
+    image: anandhavihari/education-ai:latest
+    expose:
+      - port: 8501
+        as: 8501
+        to:
+          - global: true
+    env:
+      - TEST=test
+profiles:
+  name: hello-world
+  duration: 30min
+  mode: fizz
+  tier:
+    - community
+  compute:
+    web:
+      resources:
+        cpu:
+          units: 4
+        memory:
+          size: 16Gi
+        storage:
+          size: 64Gi
+  placement:
+    westcoast:
+      attributes:
+        region: us-east
+      pricing:
+        web:
+          token: USDT
+          amount: 0.5
+deployment:
+  web:
+    westcoast:
+      profile: web
+      count: 1

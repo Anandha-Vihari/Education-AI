@@ -123,7 +123,7 @@ def navbar():
             )
 
         with col4:
-            User_Display_Name = "Chaitanya"
+            User_Display_Name = "Anandha"
             profile_pic_base64 = get_base64_image(profile_pic_url)
 
             st.markdown(

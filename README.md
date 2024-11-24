@@ -223,21 +223,14 @@ Deployment created using wallet xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Sending the manifest for deployment…
 Deployment manifest sent, waiting for acknowledgment.
 Deployment is finished.
+```
 
 ### 6. Access Your Deployment
 To get details about your deployment, including the URL, ports, and status, run:
-```bash
+```
 sphnctl deployment get --lid <lease-id>
 ```
 Replace the `<lease-id>` with your actual Lease ID, you obtained after deployment.
-
-
-
-
-
-
-
-
 
 ---
 

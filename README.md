@@ -231,6 +231,28 @@ To get details about your deployment, including the URL, ports, and status, run:
 sphnctl deployment get --lid <lease-id>
 ```
 Replace the `<lease-id>` with your actual Lease ID, you obtained after deployment.
+```
+sphnctl deployment get --lid 1730
+Status of the deployment ID: 1730 
+Deployment on-chain details:
+ Status: Matched
+ Gateway: 0xbAfA56f3580f8b8Bdf98b0Ee179631D58CE95b47
+ Fizz: 0xae9c14124e02a3761F6715e0b91B5a59DceCb84B
+ Price per hour: 1.44e-14
+ Start time: 2024-11-24T03:47:55Z
+ Remaining time: 23min, 54sec
+
+Services running:
+  web
+    URL: [http://provider.girnaartech.com:20005]
+    Ports:
+      - 8501 -> 20005 (tcp)
+      - 8501 -> 20005 (tcp)
+    Replicas: 1/1 available, 1 ready
+    Host URI: provider.girnaartech.com
+    Region: finland
+    IPs:
+```
 
 ---
 

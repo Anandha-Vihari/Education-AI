@@ -253,13 +253,53 @@ Services running:
     Region: finland
     IPs:
 ```
-
+sphnctl deployment logs --lid 1730
+```
+sphnctl deployment logs --lid 1730
+[/web-solid-muskox-1730]  2024-11-24T03:47:59.420486943Z 
+[/web-solid-muskox-1730] r2024-11-24T03:47:59.420540363Z Collecting usage statistics. To deactivate, sset browser.gatherUsageStats to false.
+[/web-solid-muskox-1730]  2024-11-24T03:47:59.420547094Z
+[/web-solid-muskox-1730]  2024-11-24T03:47:59.723250112Z
+[/web-solid-muskox-1730] V2024-11-24T03:47:59.723281755Z   You can now view your Streamlit app in yourr browser.
+[/web-solid-muskox-1730]  2024-11-24T03:47:59.723287186Z
+[/web-solid-muskox-1730] B2024-11-24T03:47:59.723300437Z   Local URL: http://localhost:8501
+[/web-solid-muskox-1730] E2024-11-24T03:47:59.723334357Z   Network URL: http://172.17.0.2:8501        
+[/web-solid-muskox-1730] I2024-11-24T03:47:59.723378439Z   External URL: http://198.46.206.86:8501    
+[/web-solid-muskox-1730]  2024-11-24T03:47:59.723386720Z 
+[/web-solid-muskox-1730] �2024-11-24T03:54:30.291774246Z /app/Pages/Chat.py:5: LangChainDeprecationWarrning: Importing TextLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+[/web-solid-muskox-1730]  2024-11-24T03:54:30.291809450Z
+[/web-solid-muskox-1730] T2024-11-24T03:54:30.291814347Z >> from langchain.document_loaders import TexxtLoader
+[/web-solid-muskox-1730]  2024-11-24T03:54:30.291818914Z
+[/web-solid-muskox-1730] 42024-11-24T03:54:30.291822482Z with new imports of:
+[/web-solid-muskox-1730]  2024-11-24T03:54:30.291826097Z
+[/web-solid-muskox-1730] ^2024-11-24T03:54:30.291829607Z >> from langchain_community.document_loaders  import TextLoader
+[/web-solid-muskox-1730] �2024-11-24T03:54:30.291833525Z You can use the langchain cli to **automaticaally** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+[/web-solid-muskox-1730] S2024-11-24T03:54:30.291837804Z   from langchain.document_loaders import TexttLoader
+```
+To get deployment url
+run command
+```
+sphnctl deployment get --lid 1730
+```
+```
+Services running:
+  web
+    URL: [http://provider.girnaartech.com:20005]
+    Ports:
+      - 8501 -> 20005 (tcp)
+      - 8501 -> 20005 (tcp)
+    Replicas: 1/1 available, 1 ready
+    Host URI: provider.girnaartech.com
+    Region: finland
+    IPs:
+```
+    URL: [http://provider.girnaartech.com:20005] this the url for deployment url
 ---
 
 ## 📫 **Contact**  
 For inquiries, please reach out to:  
 - **Name**: Anandha Vihari  
-- **Email**: anandhavihari@example.com  
+- **Email**: viharianandha@example.com  
 
 ---
 

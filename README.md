@@ -50,16 +50,49 @@ Generates **context-aware interview simulations** using domain-specific **neural
 ### 📚 **Comprehensive Learning Resources**  
 Integrates a suite of AI-driven educational tools, including **semantic similarity-based course generators**, **ML-enhanced diagnostic assessments**, and **customized coding challenges**. These resources are enriched through **knowledge distillation** and optimized for **adaptive skill reinforcement**, ensuring robust comprehension and retention of complex subject matter.
 
+### 🎯 **Adaptive Curriculum Recommendation Engine**
+Utilizes latent representation models to evaluate learner proficiency, dynamically reconfiguring course pathways.
+
+### 🗣️ **Interactive Socratic Conversational Agent**
+Implements transformer-based architectures for dialectical reasoning, enabling recursive question-answer chains.
+
+### 💼 **Interview Simulation Framework**
+Generates real-time interview scenarios using pre-trained neural networks for domain-specific queries and skill evaluation.
+
+### 📚 **Integrated Learning Ecosystem**
+Includes generative problem sets, knowledge assessments, and diagnostic algorithms for real-time performance analytics.
+
 ---
 
 ## 🛠️ **Technologies Used**  
 - **Programming Languages**: Python  
 - **AI/ML Models**: Gemini Models, LangChain  
-- **Data Augmentation**: RAG (Retrieval-Augmented Generation)  
+- **Data Augmentation**: RAG (Retrieval-Augmented Generation)
+- **Data and Storage:** ChromaDB, SQLAlchemy
 - **Authentication**: Google Authentication APIs  
 - **Speech Recognition**: Advanced audio pipelines  
 - **Frontend Frameworks**: Streamlit  
-- **Version Control**: Git  
+- **Version Control**: Git
+
+## 🗂️ **Comprehensive Library Framework**
+### **Artificial Intelligence and Machine Learning:**
+- **Core Libraries:** `langchain`, `torch`, `transformers`, `sentence-transformers`
+- **Google AI Integrations:** `google-generativeai`, `google-auth`, `google-api-core`
+
+### **User Interface and Visualization:**
+- **Streamlit Suite:** `streamlit`, `streamlit-chat`, `streamlit-webrtc`
+- **Media Processing:** `mediapipe`, `vosk`, `gTTS`
+
+### **Data Processing and Numerical Computation:**
+- **Pipelines:** `numpy`, `pandas`, `scipy`, `scikit-learn`
+- **Vision Systems:** `opencv-python`, `opencv-contrib-python`
+
+### **System Optimizations and CUDA Toolkits:**
+- **GPU Acceleration:** `nvidia-cublas-cu12`, `nvidia-cudnn-cu12`
+
+### **Auxiliary Libraries and Utilities:**
+- **DevOps:** `python-dotenv`, `aiohttp`, `filelock`, `tqdm`
+- **Database Systems:** `chromadb`, `chroma-hnswlib`, `SQLAlchemy`
 
 ---
 

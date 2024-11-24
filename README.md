@@ -88,7 +88,7 @@ Includes generative problem sets, knowledge assessments, and diagnostic algorith
 ### 📦 **Installation and Environment Configuration**
 1. **Repository Initialization:**
    ```bash
-   git clone https://github.com/Anandha-Vihari/education-ai.git
+   git clone https://github.com/yourusername/education-ai.git
    cd education-ai
    ```
 2. **Virtual Environment Configuration:**
@@ -150,7 +150,7 @@ Access the interface at: [http://localhost:8501](http://localhost:8501)
 
 ## 📫 **Contact Information**
 For technical queries or collaboration, contact:
-- **Email:** viharianandha@gmail.com
+- **Email:** yourname@example.com
 
 ---
 

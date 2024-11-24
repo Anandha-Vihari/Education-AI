@@ -147,7 +147,96 @@ Integrates a suite of AI-driven educational tools, including **semantic similari
 - 📈 **Advanced Analytics**: Incorporate detailed analytics to track user progress and provide deeper insights.  
 - 🤝 **Community Features**: Introduce forums and collaborative tools to foster a learning community.  
 - 📱 **Mobile Application**: Develop a mobile version of Education AI for on-the-go learning.  
-- 🎓 **Certification Programs**: Offer recognized certifications to validate user skills and knowledge.  
+- 🎓 **Certification Programs**: Offer recognized certifications to validate user skills and knowledge.
+
+## Deploying on Spheron
+
+### Prerequisites
+* A Linux system  [curl](https://curl.se/)
+
+### Installation
+1. **Install the `sphnctl` CLI:**
+   ```bash
+   curl -sL [https://sphnctl.sh](https://sphnctl.sh) | bash
+
+  After installation, verify the installation by using a simple command to check the Spheron version:
+```bash
+sphnctl version # or `sphnctl -h` for help
+```
+### 2. Creating a Wallet
+```bash
+sphnctl wallet create --name <your-wallet-name>
+```
+Replace `<your-wallet-name>` with your desired wallet name. Here is an example of how the result will look:
+```bash
+Created account xxx:
+ path: /home/path/.spheron/<your-wallet-name>.json
+ address: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ secret: xxxxxxxxxx
+ mnemonic: xxxxxx xxxxx xxxx xxxxx xxxxx xxxx xxxxx xxxxx
+
+### 3. Get Test Tokens from the Faucet
+You will need some token to deploy on Spheron. Visit the [Spheron Faucet](https://faucet.spheron.network/) to obtain test tokens for deployment. After receiving the tokens, you can check your wallet balance with:
+```bash
+sphnctl wallet balance --token USDT
+```
+Here is an example of how the result will look:
+```bash
+Current ETH balance: 0.09993387282 
+Total USDT balance: 50
+ 
+Deposited USDT balance
+ unlocked: 0
+ locked: 0 
+```
+
+### 4. Deposit Tokens to Your Escrow Balance
+Deposit USDT to your escrow wallet for deployment:
+```bash
+sphnctl payment deposit --amount 20 --token USDT
+```
+Now check your balance, if it's unlocked and sufficient:
+```bash
+sphnctl wallet balance --token USDT
+
+### 5. Create your Deployment
+  In to project root folder
+```bash
+sphnctl deployment create deploy.yml
+```
+No need to setup .env API's ,i used my API's to deploy...
+
+Here is an example of how the result will look:
+```bash
+Validating SDL configuration.
+SDL validated.
+Sending configuration for provider matching.
+Create deployment tx: [Tx Hash]
+Waiting for providers to bid on the deployment order...
+Bid found.
+Order matched successfully.
+Deployment created using wallet xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ lid: 389
+ provider: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ agreed price: x.xx
+Sending the manifest for deployment…
+Deployment manifest sent, waiting for acknowledgment.
+Deployment is finished.
+
+### 6. Access Your Deployment
+To get details about your deployment, including the URL, ports, and status, run:
+```bash
+sphnctl deployment get --lid <lease-id>
+```
+Replace the `<lease-id>` with your actual Lease ID, you obtained after deployment.
+
+
+
+
+
+
+
+
 
 ---
 

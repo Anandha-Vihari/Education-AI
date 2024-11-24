@@ -174,6 +174,7 @@ Created account xxx:
  address: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  secret: xxxxxxxxxx
  mnemonic: xxxxxx xxxxx xxxx xxxxx xxxxx xxxx xxxxx xxxxx
+```
 
 ### 3. Get Test Tokens from the Faucet
 You will need some token to deploy on Spheron. Visit the [Spheron Faucet](https://faucet.spheron.network/) to obtain test tokens for deployment. After receiving the tokens, you can check your wallet balance with:
@@ -196,7 +197,7 @@ Deposit USDT to your escrow wallet for deployment:
 sphnctl payment deposit --amount 20 --token USDT
 ```
 Now check your balance, if it's unlocked and sufficient:
-```bash
+
 sphnctl wallet balance --token USDT
 
 ### 5. Create your Deployment

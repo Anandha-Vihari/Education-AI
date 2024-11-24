@@ -332,7 +332,20 @@ Services running:
 ## 📫 **Contact**  
 For inquiries, please reach out to:  
 - **Name**: Anandha Vihari  
-- **Email**: viharianandha@example.com  
+- **Email**: viharianandha@gmail.com
+
+## Demo
+
+![Solving Problems](https://github.com/user-attachments/assets/beb3a30e-d90a-4b19-919b-3bb392fe7356)
+![Practice Problems](https://github.com/user-attachments/assets/c4abc77a-794e-42bf-acc5-7293458512c0)
+![Mock Interview](https://github.com/user-attachments/assets/3ccada6f-62ca-40cd-a142-e63f053d3d6e)
+![MCQ's](https://github.com/user-attachments/assets/e9e9df21-e1b4-449c-af96-66bb79437ada)
+![login page](https://github.com/user-attachments/assets/ba44d4a3-bddf-46ca-8b15-cd0aa1f8060d)
+![Learn3](https://github.com/user-attachments/assets/ffd3ac8d-5e08-4fbb-b797-fab8787fa66c)
+![Learn2](https://github.com/user-attachments/assets/115f6000-fd2b-4e45-ad8f-fecbc15ede47)
+![Learn](https://github.com/user-attachments/assets/06123cf9-5fc4-46e4-bc69-675f515240bb)
+![Coding Problem](https://github.com/user-attachments/assets/d99d59ab-9d63-4149-ad53-ef4d40f4b5d4)
+![chat](https://github.com/user-attachments/assets/6f9f3f4f-068e-4e89-b894-ae1ed16ab1a2)
 
 ---
 
